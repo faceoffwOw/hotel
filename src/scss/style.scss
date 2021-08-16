@@ -1,0 +1,329 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@media (min-width: 100px){
+  body{
+    margin: 0;
+  }
+
+  .navbar{
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__logo{
+    margin: 1% 23% 1% 12%;
+  }
+  
+  .navbar__img{
+    width: 106px;
+    height: 40px;
+  }
+  
+  .navbar__submenu{
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  
+    li{
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+  
+  .not-active{
+    color: rgba(31, 32, 65, 0.5);
+  }
+  .active{
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  .navbar__link:hover{
+    .expand_more{
+      transform: rotate(180deg);
+    }
+  }
+
+  .navbar__buttons{
+    display: flex;
+
+    .navbar__button{
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      border: double 2px transparent;
+      border-radius: 22px;
+      background-image: linear-gradient(white, white), radial-gradient(at top center, #BC9CFF, #8BA4F9);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      margin-right: 20px;
+    }
+
+    .navbar__button:hover{
+      background-image: linear-gradient(#BC9CFF, #8BA4F9);
+    }
+
+    .navbar__link{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      line-height: 15px;
+      font-size: 12px;
+      text-decoration: none;
+      text-transform: uppercase;
+      //margin: auto;
+      padding: 10px 20px 10px 20px;
+      color: #BC9CFF;
+    }
+
+    .navbar__link:hover{
+      color: #FFFFFF;
+    }
+  }
+
+  .container{
+    width: auto;
+    height: 1422px;
+    background-image: url("../img/background.png");
+    background-size: 100% 100%;
+    padding-top: 6%;
+    
+    input{
+      border: 1px;
+      border: solid 1px rgba($color: #1F2041, $alpha: 0.25);
+      border-radius: 4px;
+    }
+
+    input::placeholder{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+
+      color: rgba($color: #1F2041, $alpha: 0.75);
+      padding-left: 15px;
+    }
+
+    
+    .container__search{
+      width: 395px;
+      height: 374px;
+      background-color: #FFFFFF;
+      border: solid 1px rgba($color: #000000, $alpha: 0.12);
+      border-radius: 2px;
+      margin-left: 12%;
+
+      .angle{
+        position: relative;
+        top: -35px;
+        left: 125px;
+        font-size: 24px;
+        color: rgba($color: #1F2041, $alpha: 0.50);
+      }
+
+      label{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+        margin-bottom: 5px;   
+      }
+
+      
+
+      .container__header{
+        margin: 40px 30px 20px 30px;
+
+
+        span{
+          font-family: 'Montserrat';
+          font-size: 24px;
+          font-weight: bold;
+          color: #1F2041;
+          width:320px;
+        }
+      }
+
+      .container__calendar{
+        display: flex;
+
+        input{
+          width: 150px;
+          height: 44px;
+        }
+  
+        input, label{
+          display: block;
+        }
+
+        .container__arrival{
+          margin-left: 30px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .foo{
+    height: 360px;
+    display: flex;
+    margin-top: 100px;
+
+    .foo__description{
+      margin: 0 40px 140px 140px;
+
+      .foo__logo{
+        margin-bottom: 20px;
+      }
+
+      .foo_desc{
+
+        width: 260px;
+        height: 72px;
+
+        span{
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          color: rgba(31, 32, 65, 0.75);
+        }
+      }
+    }
+
+    .foo__list-wrap{
+      margin-left: 100px;
+
+      .foo__list-list{
+        list-style-type: none;
+        padding: 0px;
+  
+        .foo__list-li{
+          margin-bottom: 20px;
+        }
+  
+        a{
+          text-decoration: none;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #1F2041;
+          opacity: 50%;
+        }
+      }
+    }
+
+    .foo__header{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #1F2041;
+      margin-bottom: 20px;
+    }
+
+    .foo__subscription{
+      margin-left: 50px;
+
+      .foo__desc{
+        width: 260px;
+        height: 48px;
+        margin-bottom: 20px;
+
+        span{
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          color: rgba(31, 32, 65, 0.75);
+        }
+      }
+
+      .foo__email{
+        display: flex;
+
+        .foo_input{
+          width: 260px;
+          height: 44px;
+          border: 1px solid rgba(#1F2041, 0.25);
+          border-radius: 4px;
+        }
+
+        .foo__link{
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          margin: 10px 10px 10px 232px;
+
+          .foo__arrow{
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }        
+    }
+
+    input::placeholder{
+      padding-left: 15px;
+      font-family: 'Montserrat';
+      font-size: 14px;
+      color: #1F2041;
+      opacity: 25%;
+    }
+  }
+
+  
+
+  .foo__copyrightBar{
+    height: 70px;
+    display: flex;
+
+    .foo__copyright{
+      span{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+
+        margin: 25px 675px 25px 140px;
+      }
+    }
+
+    .foo__social{
+      display: flex;
+
+      a{
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+      }
+
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" value="notranslate">
+  <link rel="stylesheet" href="../src/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link href="../src/css/datepicker.min.css" rel="stylesheet" type="text/css">
+  <script src="../src/js/datepicker.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a class="navbar__link" href="#">
+          <img src="../src/img/Logo.svg" class="navbar__img"/>
+        </a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__submenu">
+          <li class="navbar__link active">О нас</li>
+          <li class="navbar__link not-active">
+            Услуги <img src="../src/img/expand_more.svg" class="expand_more"/>
+          </li>
+          <li class="navbar__link not-active">Вакансии</li>
+          <li class="navbar__link not-active">Новости</li>
+          <li class="navbar__link not-active">
+            Соглашения <img src="../src/img/expand_more.svg" class="expand_more"/>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__buttons">
+        <div class="navbar__button login"><a href="#" class="navbar__link">Войти</a></div>
+        <div class="navbar__button registration"><a href="#" class="navbar__link">Зарегистрироваться</a></div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container">
+      <div class="container__search">
+        <div class="container__header"><span>Найдём номера под ваши пожелания</span></div>     
+        <div class="container__calendar">
+          <div class="container__arrival">
+            <label for="start_one">Прибытие</label>
+            <input type="text" id="start_one" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here"  placeholder="ДД.ММ.ГГГГ"/>
+            <i id="start_expand" class="fas fa-angle-down angle"></i>
+          </div>
+          <div class="container__exit">
+            <label for="start_one">Выезд</label>
+            <input type="text" id="end_one" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" placeholder="ДД.ММ.ГГГГ"/>
+            <i id="end_expand" class="fas fa-angle-down angle"></i>
+          </div>            
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="foo">
+      <div class="foo__description">
+        <div class="foo__logo">
+          <a href="#" class="foo__logo"><img src="../src/img/Logo.svg"/></a>
+        </div>
+        <div class="foo_desc">
+          <span>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</span>
+        </div>
+      </div>
+      <div class="foo__list-wrap">
+        <div class="foo__header">
+          <h3>Навигация</h3>
+        </div>
+        <div class="foo__list">
+          <ul class="foo__list-list">
+            <li class="foo__list-li"><a href="#">О нас</a></li>
+            <li class="foo__list-li"><a href="#">Новости</a></li>
+            <li class="foo__list-li"><a href="#">Служба поддержки</a></li>
+            <li class="foo__list-li"><a href="#">Услуги</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foo__list-wrap">
+        <div class="foo__header">
+          <h3>О нас</h3>
+        </div>
+        <div class="foo__list">
+          <ul class="foo__list-list">
+            <li class="foo__list-li"><a href="#">О сервисе</a></li>
+            <li class="foo__list-li"><a href="#">Наша команда</a></li>
+            <li class="foo__list-li"><a href="#">Вакансии</a></li>
+            <li class="foo__list-li"><a href="#">Инвесторы</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foo__list-wrap">
+        <div class="foo__header">
+          <h3>Служба поддержки</h3>
+        </div>
+        <div class="foo__list">
+          <ul class="foo__list-list">
+            <li class="foo__list-li"><a href="#">Соглашения</a></li>
+            <li class="foo__list-li"><a href="#">Сообщества</a></li>
+            <li class="foo__list-li"><a href="#">Связь с нами</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foo__subscription">
+        <div class="foo__header">
+          <h3>Подписка</h3>
+        </div>
+        <div class="foo__desc">
+          <span>Получайте специальные предложения и новости сервиса</span>
+        </div>
+        <div class="foo__email">
+          <input type="text" class="foo_input" placeholder="Email">
+          <a href="#" class="foo__link"><img src="../src/img/arrow_forward.svg" alt="arrow_forward" class="foo__arrow"></a>
+        </div>
+      </div>
+    </div>
+    <div class="foo__copyrightBar">
+      <div class="foo__copyright">
+        <span>Copyright © 2018 Toxin отель. Все права защищены.</span>
+      </div>
+      <div class="foo__social">
+        <div class="foo__twitter">
+          <a href="#" class="foo__link">
+            <img src="../src/img/twitter.svg" />
+          </a>
+        </div>
+        <div class="foo__facebook">
+          <a href="#" class="foo__link">
+            <img src="../src/img/facebook.svg" />
+          </a>
+        </div>
+        <div class="foo__twitter">
+          <a href="#" class="foo__link">
+            <img src="../src/img/instagram.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../src/index.js"></script>
+  <script>
+    $('#start_one,#end_one').datepicker({ 
+        onSelect: function (fd, d, picker) { 
+        $("#start_one").val(fd.split("-")[0]);
+        $("#end_one").val(fd.split("-")[1]);
+      }
+    });
+  </script>
+</body>
+</html>

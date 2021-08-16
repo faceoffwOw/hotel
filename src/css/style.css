@@ -1,0 +1,338 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@media (min-width: 100px) {
+  body {
+    margin: 0;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar__logo {
+    margin: 1% 23% 1% 12%;
+  }
+  .navbar__img {
+    width: 106px;
+    height: 40px;
+  }
+  .navbar__submenu {
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+  .navbar__submenu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .not-active {
+    color: rgba(31, 32, 65, 0.5);
+  }
+  .active {
+    color: rgba(31, 32, 65, 0.75);
+  }
+  .navbar__link:hover .expand_more {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .navbar__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__buttons .navbar__button {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: double 2px transparent;
+    border-radius: 22px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), radial-gradient(at top center, #BC9CFF, #8BA4F9);
+    background-image: linear-gradient(white, white), radial-gradient(at top center, #BC9CFF, #8BA4F9);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    margin-right: 20px;
+  }
+  .navbar__buttons .navbar__button:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background-image: linear-gradient(#BC9CFF, #8BA4F9);
+  }
+  .navbar__buttons .navbar__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 15px;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    color: #BC9CFF;
+  }
+  .navbar__buttons .navbar__link:hover {
+    color: #FFFFFF;
+  }
+  .container {
+    width: auto;
+    height: 1422px;
+    background-image: url("../img/background.png");
+    background-size: 100% 100%;
+    padding-top: 6%;
+  }
+  .container input {
+    border: 1px;
+    border: solid 1px rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+  }
+  .container input::-webkit-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-left: 15px;
+  }
+  .container input:-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-left: 15px;
+  }
+  .container input::-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-left: 15px;
+  }
+  .container input::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-left: 15px;
+  }
+  .container .container__search {
+    width: 395px;
+    height: 374px;
+    background-color: #FFFFFF;
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    margin-left: 12%;
+  }
+  .container .container__search .angle {
+    position: relative;
+    top: -35px;
+    left: 125px;
+    font-size: 24px;
+    color: rgba(31, 32, 65, 0.5);
+  }
+  .container .container__search label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-bottom: 5px;
+  }
+  .container .container__search .container__header {
+    margin: 40px 30px 20px 30px;
+  }
+  .container .container__search .container__header span {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F2041;
+    width: 320px;
+  }
+  .container .container__search .container__calendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .container__search .container__calendar input {
+    width: 150px;
+    height: 44px;
+  }
+  .container .container__search .container__calendar input, .container .container__search .container__calendar label {
+    display: block;
+  }
+  .container .container__search .container__calendar .container__arrival {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .foo {
+    height: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+  }
+  .foo .foo__description {
+    margin: 0 40px 140px 140px;
+  }
+  .foo .foo__description .foo__logo {
+    margin-bottom: 20px;
+  }
+  .foo .foo__description .foo_desc {
+    width: 260px;
+    height: 72px;
+  }
+  .foo .foo__description .foo_desc span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+  .foo .foo__list-wrap {
+    margin-left: 100px;
+  }
+  .foo .foo__list-wrap .foo__list-list {
+    list-style-type: none;
+    padding: 0px;
+  }
+  .foo .foo__list-wrap .foo__list-list .foo__list-li {
+    margin-bottom: 20px;
+  }
+  .foo .foo__list-wrap .foo__list-list a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F2041;
+    opacity: 50%;
+  }
+  .foo .foo__header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-bottom: 20px;
+  }
+  .foo .foo__subscription {
+    margin-left: 50px;
+  }
+  .foo .foo__subscription .foo__desc {
+    width: 260px;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+  .foo .foo__subscription .foo__desc span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+  .foo .foo__subscription .foo__email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .foo .foo__subscription .foo__email .foo_input {
+    width: 260px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+  }
+  .foo .foo__subscription .foo__email .foo__link {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin: 10px 10px 10px 232px;
+  }
+  .foo .foo__subscription .foo__email .foo__link .foo__arrow {
+    width: 24px;
+    height: 24px;
+  }
+  .foo input::-webkit-input-placeholder {
+    padding-left: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #1F2041;
+    opacity: 25%;
+  }
+  .foo input:-ms-input-placeholder {
+    padding-left: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #1F2041;
+    opacity: 25%;
+  }
+  .foo input::-ms-input-placeholder {
+    padding-left: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #1F2041;
+    opacity: 25%;
+  }
+  .foo input::placeholder {
+    padding-left: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #1F2041;
+    opacity: 25%;
+  }
+  .foo__copyrightBar {
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .foo__copyrightBar .foo__copyright span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin: 25px 675px 25px 140px;
+  }
+  .foo__copyrightBar .foo__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .foo__copyrightBar .foo__social a {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+  }
+  .foo__copyrightBar .foo__social img {
+    width: 24px;
+    height: 24px;
+  }
+}
