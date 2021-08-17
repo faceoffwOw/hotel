@@ -58,17 +58,33 @@
         <div class="container__guests">
           <p>Гости</p>
           <div id="container__info" class="container__choice not-expand">
-            <span id="info" class="container__info" onclick="spanClick()">Сколько гостей</span>
-            <i id="expand_guests" class="fas fa-angle-down angle"></i>
+            <div class="container__short">
+              <span id="info" class="container__info" onclick="spanClick()">Сколько гостей</span>
+              <i id="expand_guests" class="fas fa-angle-down angle"></i>
+            </div>
             <div id="count_div" class="container__count">
               <div class="container__adults">
-                <span>Взрослые</span>
+                <span class="container__name">Взрослые</span>
+                <button id="remove_adults">-</button>
+                <span id="count_adults">0</span>
+                <button id="add_adults">+</button>
+              </div>
+              <div class="container__children">
+                <span class="container__name">Дети</span>
                 <button>-</button>
-                <span>0</span>
+                <span id="count_children">0</span>
                 <button>+</button>
               </div>
-              <div class="container__children"></div>
-              <div class="cointainer__babies"></div>
+              <div class="container__babies">
+                <span class="container__name">Младенцы</span>
+                <button>-</button>
+                <span id="count_babies">0</span>
+                <button>+</button>
+              </div>
+              <div class="container__buttons">
+                <button id="btn_clear" class="clear">Очистить</button>
+                <button id="btn_submit" class="submit">Применить</button>
+              </div>
             </div>
           </div>
         </div>
