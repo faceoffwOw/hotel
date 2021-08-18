@@ -65,25 +65,25 @@
             <div id="count_div" class="container__count">
               <div class="container__adults">
                 <span class="container__name">Взрослые</span>
-                <button id="remove_adults">-</button>
+                <button id="remove_adults" onclick="removeAdults()">-</button>
                 <span id="count_adults">0</span>
-                <button id="add_adults">+</button>
+                <button id="add_adults" onclick="addAdults()">+</button>
               </div>
               <div class="container__children">
                 <span class="container__name">Дети</span>
-                <button>-</button>
+                <button id="remove_children" onclick="removeChildren()">-</button>
                 <span id="count_children">0</span>
-                <button>+</button>
+                <button id="add_children" onclick="addChildren()">+</button>
               </div>
               <div class="container__babies">
                 <span class="container__name">Младенцы</span>
-                <button>-</button>
+                <button id="remove_babies" onclick="removeBabies()">-</button>
                 <span id="count_babies">0</span>
-                <button>+</button>
+                <button id="add_babies" onclick="addBabies()">+</button>
               </div>
               <div class="container__buttons">
-                <button id="btn_clear" class="clear">Очистить</button>
-                <button id="btn_submit" class="submit">Применить</button>
+                <button id="btn_clear" class="clear" onclick="Clear()">Очистить</button>
+                <button id="btn_submit" class="submit" onclick="Submit()">Применить</button>
               </div>
             </div>
           </div>
@@ -183,6 +183,6 @@
         $("#end_one").val(fd.split("-")[1]);
       }
     });
-  </script>
+  </script>s
 </body>
 </html>

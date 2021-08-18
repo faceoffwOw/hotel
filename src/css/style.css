@@ -294,7 +294,7 @@
     background-color: #000000;
     border-color: rgba(31, 32, 65, 0.5);
     color: rgba(31, 32, 65, 0.5);
-    cursor: pointer;
+    cursor: not-allowed;
   }
   .container .container__guests .container__count .container__buttons {
     margin-left: 5px;
