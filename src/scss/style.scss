@@ -147,7 +147,7 @@
       
 
       .container__header{
-        margin: 40px 30px 20px 30px;
+        margin: 30px 30px 20px 30px;
 
 
         span{
@@ -161,7 +161,6 @@
 
       .container__calendar{
         display: flex;
-        margin-bottom: 20px;
 
         input{
           width: 133px;
@@ -185,6 +184,7 @@
       margin-right: 30px;
 
       p{
+        margin-top: 0;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: bold;
@@ -288,15 +288,9 @@
             cursor: pointer;
           }
           button:disabled{
-            margin-top: 5px;
-            width: 30px;
-            height: 30px;
-            font-family: "Montserrat";
-            border-radius: 50%;
-            border: 1px solid;
-            background-color: #000000;
-            border-color: rgba(31, 32, 65, 0.5);
-            color: rgba(31, 32, 65, 0.5);
+            background-color: #fff;
+            border-color: rgba(31, 32, 65, 0.25);
+            color: rgba(31, 32, 65, 0.25);
             cursor: not-allowed;
           }
         }
@@ -328,6 +322,44 @@
           .submit{
             width: 84px;
           }
+        }
+      }
+    }
+
+    .container__pick{
+      margin-left: 30px;
+      margin-top: 30px;
+
+      button{
+        color: #BC9CFF;
+        font-size: 15px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+
+        width: 320px;
+        height: 44px;
+        border: double 2px transparent;
+        border-radius: 22px;
+        background-image: linear-gradient(white, white), radial-gradient(at top center, #BC9CFF, #8BA4F9);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+
+        i{
+          margin-top: 3px;
+          font-size: 15px;
+          margin-right: 12px;
+          float: right;
+          color: #BC9CFF;
+        }
+      }
+      button:hover{
+        cursor: pointer;
+        color: #fff;
+        background-image: linear-gradient(#BC9CFF, #8BA4F9);
+        
+        i{
+          color: #fff;
         }
       }
     }
@@ -397,7 +429,7 @@
     }
 
     .foo__subscription{
-      margin-left: 50px;
+      margin-left: 100px;
 
       .foo__desc{
         width: 260px;

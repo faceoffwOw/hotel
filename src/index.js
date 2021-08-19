@@ -41,16 +41,20 @@ addEventListener("click", function() {
 
 window.addEventListener('click', function (e) {
   if(span_check != e.target && !div.contains(e.target)){
+    div_pick = document.getElementById("pick");
     div.classList.replace("expand", "not-expand");
     i_guests.classList.replace("fa-angle-up", "fa-angle-down");
     count_div.style.display = "none";
+    div_pick.style.display = "block";
   }
 });
 
 function spanClick(){
+  div_pick = document.getElementById("pick");
   div.classList.replace("not-expand", "expand");
   i_guests.classList.replace("fa-angle-down", "fa-angle-up");
-  count_div.style.display = "block"; 
+  count_div.style.display = "block";
+  div_pick.style.display = "none";
 }
 
 function Remove(value){
@@ -156,4 +160,8 @@ function Submit(){
   if(total > 4){
     span_check.innerHTML = total + " гостей";
   }
+
+  div.classList.replace("expand", "not-expand");
+  i_guests.classList.replace("fa-angle-up", "fa-angle-down");
+  count_div.style.display = "none";
 }
