@@ -25,6 +25,7 @@ remove_babies.disabled = true;
 
 
 addEventListener("click", function() {
+  console.log(document.activeElement);
   if(input_start === document.activeElement){
     i_start.classList.replace("fa-angle-down", "fa-angle-up");
   }
@@ -146,6 +147,7 @@ function Clear(){
 }
 
 function Submit(){
+  div_pick = document.getElementById("pick");
   let count_babies = document.getElementById("count_babies");
   let count_children = document.getElementById("count_children");
   let count_adults = document.getElementById("count_adults");
@@ -164,4 +166,5 @@ function Submit(){
   div.classList.replace("expand", "not-expand");
   i_guests.classList.replace("fa-angle-up", "fa-angle-down");
   count_div.style.display = "none";
+  div_pick.style.display = "block";
 }
