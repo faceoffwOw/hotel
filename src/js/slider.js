@@ -4,6 +4,7 @@ let price = document.getElementById("price");
 let minGap = 0;
 let sliderTrack = document.querySelector(".slider-track");
 let sliderMaxValue = document.getElementById("slider-1").max;
+let rub = "₽";
 
 window.onload = function(){
   slideOne();
@@ -15,7 +16,7 @@ function slideOne(){
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
 
-  price.value = sliderOne.value.toString() + " - " + sliderTwo.value.toString();
+  price.value = sliderOne.value.toString() + rub + " - " + sliderTwo.value.toString() + rub;
 
   fillColor();
 }
@@ -24,7 +25,7 @@ function slideTwo(){
   if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
     sliderTwo.value = parseInt(sliderOne.value) + minGap;
   }
-  price.value = sliderOne.value.toString() + " - " + sliderTwo.value.toString();
+  price.value = sliderOne.value.toString() + rub + " - " + sliderTwo.value.toString() + rub;
   fillColor();
 }
 

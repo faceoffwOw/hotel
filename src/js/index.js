@@ -25,7 +25,6 @@ remove_babies.disabled = true;
 
 
 addEventListener("click", function() {
-  console.log(document.activeElement);
   if(input_start === document.activeElement){
     i_start.classList.replace("fa-angle-down", "fa-angle-up");
   }

@@ -44,11 +44,13 @@
       <div class="filter">
         <div class="filter__date">
           <label>Даты пребывания в отеле</label>
-          <input type="text">
+          <input type="text" id="date_residence" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here"  placeholder="ДД.ММ.ГГГГ"/>
+          <i id="angle_residence" class="fas fa-angle-down"></i>
         </div>
         <div class="filter__guests">
           <label>Гости</label>
           <input type="text">
+          <i id="angle_guests" class="fas fa-angle-down"></i>
         </div>
         <div class="filter__price">
           <div class="filter__price-info">
@@ -56,8 +58,48 @@
             <input type="text" id="price">
           </div>
           <div class="slider-track"></div>
-          <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
-          <input type="range" min="0" max="100" value="60" id="slider-2" oninput="slideTwo()">
+          <input type="range" min="0" max="2000" value="30" id="slider-1" oninput="slideOne()">
+          <input type="range" min="0" max="2000" value="500" id="slider-2" oninput="slideTwo()">
+          <p class="description">Стоимость за сутки пребывания в номере</p>
+        </div>
+        <div class="filter__rules">
+          <p>Правила дома</p>
+          <div class="filter__smoke rule">
+            <input type="checkbox">
+            <span>Можно курить</span>
+          </div>
+          <div class="filter__pets rule">
+            <input type="checkbox">
+            <span>Можно с питомцами</span>
+          </div>
+          <div class="filter__invite rule">
+            <input type="checkbox">
+            <span>Можно пригласить гостей (до 10 человек)</span>
+          </div>
+          <div class="filter__availibility">
+            <p>Доступность</p>
+            <div class="filter__wide-corridor">
+              <input type="checkbox">
+              <div class="filter__avalibility-description">
+                <span class="properties">Широкий коридор</span>
+                <span class="properties-desc">Ширина коридоров в номере не менее 91 см.</span>
+              </div>
+            </div>
+            <div class="filter__help-invalids">
+              <input type="checkbox">
+              <div class="filter__avalibility-description">
+                <span class="properties">Помощник для инвалидов</span>
+                <span class="properties-desc">На 1 этаже вас встретит специалист  и проводит до номера.</span>
+              </div>
+            </div>
+          </div>
+          <div class="filter__comfort">
+            <label for="">Удобство номера</label>
+            <input type="text">
+          </div>        
+        </div>
+        <div class="filter__add-comfort">
+          <button>Дополнительные удобства <i class="fas fa-angle-down"></i></button>
         </div>
       </div>
       <div class="room">
@@ -151,4 +193,5 @@
   </footer>
 </body>
 <script src="../src/js/slider.js"></script>
+<script src="../src/js/search.js"></script>
 </html>
