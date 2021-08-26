@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" value="notranslate">
   <link rel="stylesheet" href="../src/css/all.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/search.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
   <link href="../src/css/datepicker.min.css" rel="stylesheet" type="text/css">
   <script src="../src/js/datepicker.min.js"></script>
@@ -41,56 +41,27 @@
   </header>
   <section>
     <div class="container">
-      <div class="container__search">
-        <div class="container__header"><span>Найдём номера под ваши пожелания</span></div>     
-        <div class="container__calendar">
-          <div class="container__arrival">
-            <label for="start_one">Прибытие</label>
-            <input type="text" id="start_one" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here"  placeholder="ДД.ММ.ГГГГ"/>
-            <i id="start_expand" class="fas fa-angle-down angle"></i>
+      <div class="filter">
+        <div class="filter__date">
+          <label>Даты пребывания в отеле</label>
+          <input type="text">
+        </div>
+        <div class="filter__guests">
+          <label>Гости</label>
+          <input type="text">
+        </div>
+        <div class="filter__price">
+          <div class="filter__price-info">
+            <label for="">Диапазон цены</label>
+            <input type="text" id="price">
           </div>
-          <div class="container__exit">
-            <label for="start_one">Выезд</label>
-            <input type="text" id="end_one" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" placeholder="ДД.ММ.ГГГГ"/>
-            <i id="end_expand" class="fas fa-angle-down angle"></i>
-          </div>            
+          <div class="slider-track"></div>
+          <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+          <input type="range" min="0" max="100" value="60" id="slider-2" oninput="slideTwo()">
         </div>
-        <div class="container__guests">
-          <p>Гости</p>
-          <div id="container__info" class="container__choice not-expand">
-            <div class="container__short">
-              <span id="info" class="container__info" onclick="spanClick()">Сколько гостей</span>
-              <i id="expand_guests" class="fas fa-angle-down angle"></i>
-            </div>
-            <div id="count_div" class="container__count">
-              <div class="container__adults">
-                <span class="container__name">Взрослые</span>
-                <button id="remove_adults" onclick="removeAdults()">-</button>
-                <span id="count_adults">0</span>
-                <button id="add_adults" onclick="addAdults()">+</button>
-              </div>
-              <div class="container__children">
-                <span class="container__name">Дети</span>
-                <button id="remove_children" onclick="removeChildren()">-</button>
-                <span id="count_children">0</span>
-                <button id="add_children" onclick="addChildren()">+</button>
-              </div>
-              <div class="container__babies">
-                <span class="container__name">Младенцы</span>
-                <button id="remove_babies" onclick="removeBabies()">-</button>
-                <span id="count_babies">0</span>
-                <button id="add_babies" onclick="addBabies()">+</button>
-              </div>
-              <div class="container__buttons">
-                <button id="btn_clear" class="clear" onclick="Clear()">Очистить</button>
-                <button id="btn_submit" class="submit" onclick="Submit()">Применить</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="pick" class="container__pick">
-          <button class="container__pick-btn">Подобрать номер <i class="fas fa-arrow-right"></i></button>
-        </div>
+      </div>
+      <div class="room">
+        <span>Комнаты</span>
       </div>
     </div>
   </section>
@@ -178,14 +149,6 @@
       </div>
     </div>
   </footer>
-  <script src="../src/js/index.js"></script>
-  <script>
-    $('#start_one,#end_one').datepicker({ 
-        onSelect: function (fd, d, picker) { 
-        $("#start_one").val(fd.split("-")[0]);
-        $("#end_one").val(fd.split("-")[1]);
-      }
-    });
-  </script>s
 </body>
+<script src="../src/js/slider.js"></script>
 </html>

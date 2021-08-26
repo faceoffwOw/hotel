@@ -371,7 +371,7 @@
     margin-top: 100px;
 
     .foo__description{
-      margin: 0 40px 140px 140px;
+      margin: 0 40px 140px 12%;
 
       .foo__logo{
         margin-bottom: 20px;
@@ -394,7 +394,7 @@
     }
 
     .foo__list-wrap{
-      margin-left: 100px;
+      margin-left: 75px;
 
       .foo__list-list{
         list-style-type: none;
@@ -484,6 +484,7 @@
   .foo__copyrightBar{
     height: 70px;
     display: flex;
+    margin-left: 12%;
 
     .foo__copyright{
       span{
@@ -494,7 +495,7 @@
         line-height: 24px;
         color: rgba(31, 32, 65, 0.75);
 
-        margin: 25px 675px 25px 140px;
+        margin: 25px 810px 25px 0;
       }
     }
 
