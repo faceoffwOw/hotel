@@ -283,6 +283,28 @@ body {
   display: flex;
 }
 
+.container .checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.container .checkbox::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.container .checkbox.active::before {
+  border: 1px solid #BC9CFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container .filter {
   display: block;
   margin-left: 150px;
