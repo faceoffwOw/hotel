@@ -283,28 +283,6 @@ body {
   display: flex;
 }
 
-.container .checkbox input[type="checkbox"] {
-  display: none;
-}
-
-.container .checkbox::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  position: absolute;
-}
-
-.container .checkbox.active::before {
-  border: 1px solid #BC9CFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .container .filter {
   display: block;
   margin-left: 150px;
@@ -567,4 +545,140 @@ body {
 .container .filter .filter__price input[type="range"]:active::-webkit-slider-thumb {
   background: #FFFFFF;
   border: solid #6FCF97 2px;
+}
+
+.container .filter .checkbox {
+  height: 0;
+}
+
+.container .filter .checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.container .filter .checkbox::before {
+  margin-top: 2px;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.container .filter .checkbox.active::before {
+  border: 1px solid #BC9CFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .filter .checkbox__desc {
+  width: 200px;
+  margin-left: 25px;
+}
+
+.container .filter .filter__rules {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.container .filter .filter__rules p {
+  color: #1F2041;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 12;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.container .filter .filter__rules span {
+  color: rgba(31, 32, 65, 0.5);
+  word-wrap: break-word;
+}
+
+.container .filter .filter__rules i {
+  display: none;
+}
+
+.container .filter .filter__rules .check {
+  position: relative;
+  top: -2px;
+  left: 4px;
+  font-size: 8px;
+  z-index: -1;
+  background: -webkit-linear-gradient(#BC9CFF, #8BA4F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .filter .filter__availibility {
+  margin-bottom: 30px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.container .filter .filter__availibility i {
+  display: none;
+}
+
+.container .filter .filter__availibility .check {
+  position: relative;
+  top: -2px;
+  left: 4px;
+  font-size: 8px;
+  z-index: -1;
+  background: -webkit-linear-gradient(#BC9CFF, #8BA4F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .filter .filter__availibility .filter__wide-corridor .properties-desc {
+  width: 200px;
+}
+
+.container .filter .filter__availibility .filter__help-invalids .properties-desc {
+  width: 230px;
+}
+
+.container .filter .filter__availibility .filter__availibility-description {
+  margin-left: 25px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container .filter .filter__availibility .properties {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.container .filter .filter__availibility .properties-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  word-wrap: break-word;
 }
