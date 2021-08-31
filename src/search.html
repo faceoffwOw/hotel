@@ -115,15 +115,32 @@
             </div>
           </div>
         </div>
-        <div id="comfort" class="filter__comfort">
-          Комфорт
-        </div>
-        <div class="filter__comfort1">
-          <label for="">Удобство номера</label>
-          <input type="text">
-        </div>
-        <div class="filter__add-comfort">
-          <button>Дополнительные удобства <i class="fas fa-angle-down"></i></button>
+        <div class="filter__comfort">
+          Удобство номера
+          <div id="comfort" class="filter__comfort-properties">
+            <span class="comfort-info">Выберете удобства</span>
+            <i class="fas fa-angle-down angle-comfort"></i>
+            <div class="comfort__choose">
+              <div class="comfort__bedrooms">
+                <span class="name">Спальни</span>
+                <button id="remove_bedrooms" onclick="Counting(this.id)" disabled>-</button>
+                <span id="count_bedrooms" class="count">0</span>
+                <button id="add_bedrooms" onclick="Counting(this.id)">+</button>
+              </div>
+              <div class="comfort__beds">
+                <span class="name">Кровати</span>
+                <button id="remove_beds" onclick="Counting(this.id)" disabled>-</button>
+                <span id="count_beds" class="count">0</span>
+                <button id="add_beds" onclick="Counting(this.id)">+</button>
+              </div>
+              <div class="comfort__bathroom-rooms">
+                <span class="name">Ванные комнаты</span>
+                <button id="remove_bathrooms" onclick="Counting(this.id)" disabled>-</button>
+                <span id="count_bathrooms" class="count">0</span>
+                <button id="add_bathrooms" onclick="Counting(this.id)">+</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="room">

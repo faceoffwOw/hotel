@@ -590,5 +590,177 @@ body{
         word-wrap: break-word;
       }
     }
+
+    .filter__comfort-properties{
+      cursor: pointer;
+      margin-top: 5px;
+      width: 265px;
+      height: 44px;
+      border: solid 1px rgba(31, 32, 65, 0.5);
+      border-radius: 4px 4px 0 0;
+      box-sizing: border-box;
+
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none;   /* Chrome/Safari/Opera */
+      -khtml-user-select: none;    /* Konqueror */
+      -moz-user-select: none;      /* Firefox */
+      -ms-user-select: none;       /* Internet Explorer/Edge */
+      user-select: none;
+
+      .comfort-info{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        display: inline-block;
+        margin: 10px 0 0 15px;
+      }
+    }
+
+    .comfort-expand{
+      width: 265px;
+      height: 163px;
+      border-radius: 4px;
+      cursor: default;
+    }
+
+    .comfort__choose{
+      width: 263px;
+      margin-top: 8px;
+      border-top: 1px solid rgba(31, 32, 65, 0.5);
+      box-sizing: border-box;
+      display: none;
+    }
+
+    .angle-comfort{
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 80px;
+      font-size: 24px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.75);
+    }
+
+    .comfort__bedrooms{
+      margin-top: 5px;
+      margin-left: 15px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #1F2041;
+
+      .name{
+        margin-right: 100px;
+      }
+
+      .count{
+      }
+
+      button{        
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(31, 32, 65, 0.5);
+        border-radius: 50%;
+        border: solid 1px rgba(#1F2041, 0.25);
+        border-color: rgba(31, 32, 65, 0.5);
+        background-color: #FFFFFF;
+      }
+      button:disabled{
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        color: rgba(31, 32, 65, 0.25);
+        cursor: not-allowed;
+      }
+    }
+
+    .comfort__beds{
+      margin-top: 5px;
+      margin-left: 15px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #1F2041;
+
+      .name{
+        margin-right: 103px;
+      }
+
+      .count{
+      }
+
+      button{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(31, 32, 65, 0.5);
+        border-radius: 50%;
+        border: solid 1px rgba(#1F2041, 0.25);
+        border-color: rgba(31, 32, 65, 0.5);
+        background-color: #FFFFFF;
+      }
+      button:disabled{
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        color: rgba(31, 32, 65, 0.25);
+        cursor: not-allowed;
+      }
+    }
+
+    .comfort__bathroom-rooms{
+      margin-top: 5px;
+      margin-left: 15px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #1F2041;
+
+      .name{
+        margin-right: 37px;
+      }
+
+      .count{
+      }
+
+      button{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(31, 32, 65, 0.5);
+        border-radius: 50%;
+        border: solid 1px rgba(#1F2041, 0.25);
+        border-color: rgba(31, 32, 65, 0.5);
+        background-color: #FFFFFF;
+      }
+      button:disabled{
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        color: rgba(31, 32, 65, 0.25);
+        cursor: not-allowed;
+      }
+    }
   }
 }
