@@ -3,8 +3,9 @@ let angle_residence = document.getElementById('angle_residence');
 let checkbox = document.querySelectorAll('input[type=checkbox]');
 let divCheck = document.querySelectorAll('.checkbox');
 let divComfort = document.getElementById('comfort');
-let divComfortExpand = document.getElementsByClassName("comfort__choose");divComfortExpand[0].style
+let divComfortExpand = document.getElementsByClassName("comfort__choose");
 let angle_comfort = document.getElementsByClassName("angle-comfort");
+let divComfortAdvanced = document.getElementById("comfort-clickable");
 
 addEventListener("click", function() {
   if(date_residence === document.activeElement){
@@ -24,11 +25,37 @@ divComfort.onclick = function(){
   }
 }
 
+divComfortAdvanced.style.cursor = "pointer";
+divComfortAdvanced.onclick = function(){
+  let comfortCheckboxes = document.getElementById("comfort-checkboxes");
+  let advanced_angle = document.getElementById("advanced-angle");
+  comfortCheckboxes.style.display = comfortCheckboxes.style.display == "none" ? comfortCheckboxes.style.display = "" : "none";
+  if(advanced_angle.classList.contains("fa-angle-down")){
+    advanced_angle.classList.replace("fa-angle-down", "fa-angle-up");
+  }
+  else{
+    advanced_angle.classList.replace("fa-angle-up", "fa-angle-down");
+  }
+}
+
 window.addEventListener('click', function (e) {
   if(divComfort != e.target && !divComfort.contains(e.target)){
+    let comfort_info = document.getElementById("info");
+    let count_bedrooms = document.getElementById("count_bedrooms");
+    let count_beds = document.getElementById("count_beds");
+    let count_bathrooms = document.getElementById("count_bathrooms");
+
     divComfort.classList.remove("comfort-expand");
     divComfortExpand[0].style.display = 'none';
     angle_comfort[0].classList.replace("fa-angle-up", "fa-angle-down");
+
+    if(count_bedrooms.innerHTML != 0 || count_beds.innerHTML != 0 || count_bathrooms.innerHTML != 0){
+      console.log(count_bedrooms.innerHTML + " спальни, " + count_beds.innerHTML + " кровати, " + count_bathrooms.innerHTML + " ванные комнаты");
+      comfort_info.innerHTML = count_bedrooms.innerHTML + " спальни, " + count_beds.innerHTML + " кровати, " + count_bathrooms.innerHTML + " ванные комнаты";
+    }
+    else{
+      comfort_info.innerHTML = "Выберете удобства";
+    }
   }
 })
 
@@ -38,7 +65,6 @@ for(let i = 0; i < divCheck.length; i++){
     divCheck[i].classList.toggle("active");
 
     let check = divCheck[i].querySelector('i');
-    console.log(check);
 
     if(divCheck[i].classList.contains("active")){
       checkbox[i].checked = true;

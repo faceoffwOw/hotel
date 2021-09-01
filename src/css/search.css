@@ -574,6 +574,18 @@ body {
           box-sizing: border-box;
 }
 
+.container .filter .check {
+  display: none;
+  position: relative;
+  top: -2px;
+  left: 4px;
+  font-size: 8px;
+  z-index: -1;
+  background: -webkit-linear-gradient(#BC9CFF, #8BA4F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container .filter .checkbox__desc {
   width: 200px;
   margin-left: 25px;
@@ -604,21 +616,6 @@ body {
 .container .filter .filter__rules span {
   color: rgba(31, 32, 65, 0.5);
   word-wrap: break-word;
-}
-
-.container .filter .filter__rules i {
-  display: none;
-}
-
-.container .filter .filter__rules .check {
-  position: relative;
-  top: -2px;
-  left: 4px;
-  font-size: 8px;
-  z-index: -1;
-  background: -webkit-linear-gradient(#BC9CFF, #8BA4F9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .container .filter .filter__availibility {
@@ -852,4 +849,51 @@ body {
   border: 1px solid rgba(31, 32, 65, 0.25);
   color: rgba(31, 32, 65, 0.25);
   cursor: not-allowed;
+}
+
+.container .filter .filter__comfort-advanced {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  margin-top: 20px;
+  width: 265px;
+}
+
+.container .filter .filter__comfort-advanced .filter__comfort-clickable {
+  margin-bottom: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.container .filter .filter__comfort-advanced .filter__comfort-clickable #advanced-angle {
+  font-size: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  position: relative;
+  top: 5px;
+  left: 29px;
+}
+
+.container .filter .filter__comfort-advanced .filter__comfort-checkboxes .advanced {
+  margin-bottom: 10px;
+}
+
+.container .filter .filter__comfort-advanced .filter__comfort-checkboxes .checkbox__desc span {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
