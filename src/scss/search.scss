@@ -515,7 +515,7 @@ body{
         color: #1F2041;
         text-transform: uppercase;
         font-family: 'Montserrat';
-        font-size: 12;
+        font-size: 12px;
         font-style: normal;
         font-weight: bold;
       }
@@ -534,6 +534,16 @@ body{
       -moz-user-select: none;      /* Firefox */
       -ms-user-select: none;       /* Internet Explorer/Edge */
       user-select: none;
+
+      p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+      }
       
       i{
         display: none;
@@ -585,6 +595,18 @@ body{
         line-height: 14px;
         color: rgba(31, 32, 65, 0.5);
         word-wrap: break-word;
+      }
+    }
+    
+    .filter__comfort{
+      p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
       }
     }
 
@@ -804,6 +826,73 @@ body{
           }
         }
       }
+    }
+  }
+
+  .room{
+    min-width: 0;
+    /* Слайдер */
+    .slick-slider{
+      min-width: 0;
+    }
+    .slick-list {
+      overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slick-track{
+      display: flex;
+    }
+
+    .room__slider{
+      /* Стрелка */
+      .slick-arrow{
+        position: absolute;
+        top: 25%;
+        z-index: 10;
+        font-size: 0;
+        width: 30px;
+        height: 50px;
+      }
+      /* Стрелка влево */
+      .slick-arrow.slick-prev{
+        background: url("../img/sl-arrow_l.svg") 0 0 / 100% no-repeat;
+      }
+      /* Стрелка вправо */
+      .slick-arrow.slick-next{
+        margin-left: 265px;
+        background: url("../img/sl-arrow_r.svg") 0 0 / 100% no-repeat;
+      }
+      /* Стрелка не активная */
+      .slick-arrow.slick-disabled{}
+      /* Точки (булиты) */
+      .slick-dots{
+        display: flex;
+
+        button{
+          position: relative;
+          top: -80px;
+          left: 130px;
+          font-size: 0;
+          width: 10px;
+          height: 10px;
+          box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+          border-radius: 50%;
+
+          background: transparent;
+          border: solid 2px #FFFFFF;
+        }
+
+        li{
+          list-style: none;
+          margin: 0 5px;
+        }      
+        .slick-active{     
+          button{
+            background: #FFFFFF;
+            border: solid 1px;
+          }
+        }
+      } 
     }
   }
 }

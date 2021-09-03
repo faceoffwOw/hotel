@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @font-face {
   font-family: 'Montserrat';
@@ -608,7 +609,7 @@ body {
   color: #1F2041;
   text-transform: uppercase;
   font-family: 'Montserrat';
-  font-size: 12;
+  font-size: 12px;
   font-style: normal;
   font-weight: bold;
 }
@@ -630,6 +631,16 @@ body {
   -ms-user-select: none;
   /* Internet Explorer/Edge */
   user-select: none;
+}
+
+.container .filter .filter__availibility p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
 }
 
 .container .filter .filter__availibility i {
@@ -678,6 +689,16 @@ body {
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
   word-wrap: break-word;
+}
+
+.container .filter .filter__comfort p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
 }
 
 .container .filter .filter__comfort-properties {
@@ -896,4 +917,80 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
+}
+
+.container .room {
+  min-width: 0;
+  /* Слайдер */
+  /* Лента слайдов */
+}
+
+.container .room .slick-slider {
+  min-width: 0;
+}
+
+.container .room .slick-list {
+  overflow: hidden;
+}
+
+.container .room .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .room .room__slider {
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+}
+
+.container .room .room__slider .slick-arrow {
+  position: absolute;
+  top: 25%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 50px;
+}
+
+.container .room .room__slider .slick-arrow.slick-prev {
+  background: url("../img/sl-arrow_l.svg") 0 0/100% no-repeat;
+}
+
+.container .room .room__slider .slick-arrow.slick-next {
+  margin-left: 265px;
+  background: url("../img/sl-arrow_r.svg") 0 0/100% no-repeat;
+}
+
+.container .room .room__slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .room .room__slider .slick-dots button {
+  position: relative;
+  top: -80px;
+  left: 130px;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  -webkit-box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+          box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+  border-radius: 50%;
+  background: transparent;
+  border: solid 2px #FFFFFF;
+}
+
+.container .room .room__slider .slick-dots li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.container .room .room__slider .slick-dots .slick-active button {
+  background: #FFFFFF;
+  border: solid 1px;
 }

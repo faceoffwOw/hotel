@@ -7,7 +7,7 @@
   <meta name="google" value="notranslate">
   <link rel="stylesheet" href="../src/css/all.min.css">
   <link rel="stylesheet" href="./css/search.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>  
   <link href="../src/css/datepicker.min.css" rel="stylesheet" type="text/css">
   <script src="../src/js/datepicker.min.js"></script>
   <title>Document</title>
@@ -116,7 +116,7 @@
           </div>
         </div>
         <div class="filter__comfort">
-          Удобство номера
+          <p>Удобство номера</p>
           <div id="comfort" class="filter__comfort-properties">
             <span id="info" class="comfort-info">Выберете удобства</span>
             <i class="fas fa-angle-down angle-comfort"></i>
@@ -206,7 +206,30 @@
         </div>
       </div>
       <div class="room">
-        <span>Комнаты</span>
+        <div class="room__topic">
+          <h1>Номера, которые мы для вас подобрали</h1>
+        </div>
+        <div class="room__catalog">
+          <div class="room__card">
+            <div class="room__slider">
+              <div class="room__item">
+                <img src="../src/img/slides/01.jpg" alt="">
+              </div>
+              <div class="room__item">
+                <img src="../src/img/slides/02.jpg" alt="">
+              </div>
+              <div class="room__item">
+                <img src="../src/img/slides/03.jpg" alt="">
+              </div>
+              <div class="room__item">
+                <img src="../src/img/slides/04.jpg" alt="">
+              </div>
+              <div class="room__item">
+                <img src="../src/img/slides/05.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -297,4 +320,7 @@
 </body>
 <script src="../src/js/slider.js"></script>
 <script src="../src/js/search.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../src/js/slick.min.js"></script>
+<script src="../src/js/custom-slick.js"></script>
 </html>
